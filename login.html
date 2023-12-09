@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='assets/css/login.css' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="login">
+            <div class="container">
+                <div class="quadrado"></div>
+                <img class="logo">
+                <div class="entrar">
+                    <h1>
+                        Bem-Vindo de Volta!
+                    </h1>
+                    <p1>
+                        Acesse sua conta
+                    </p1>
+                    <button class="btn-entrar" onclick="window.location.href='entrar.html'">ENTRAR</button>
+                </div>
+                <div class="cadastro">
+                    <h2>
+                        Crie sua conta
+                    </h2>
+                    <p2>
+                        Preencha seus dados
+                    </p2>
+                    <form  method="post">
+                        <div class="nome">
+                            <input class="digitavel" type="text" name="usuario" placeholder="Nome" required>
+                            <img class="icon-nome" src="assets\img\icon-usuario.png">
+                        </div>
+                        <div class="senha">
+                            <input class="digitavel" type="text" name="senha" placeholder="Senha" required> 
+                            <img class="icon-senha" src="assets\img\icon-senha.png">
+                        </div>
+                        <div class="e-mail">
+                            <input class="digitavel" type="text" name="e-mail" placeholder="E-mail" required> 
+                            <img class="icon-email" src="assets\img\icon-email.png">
+                        </div>
+                        <button class="btn-cadas" onclick="window.location.href='cadastrar.html'">CADASTRAR</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

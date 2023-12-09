@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='assets/css/cadastrar.css' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="ambiente">
+        <h1>Criando sua conta</h1>
+        <label class="foto" for="foto-input" tabindex="0">
+            <img class="icon-upload" src="assets\img\icon-upload.png">
+            <span class="imagem-input"></span>
+        </label>
+        <input type="file" accept="img/*" id="foto-input">
+        <form  method="post">
+            <div class="usuario">
+                <input class="digitavel-dif" type="text" name="usuario" placeholder="Usuário de Login" required>
+                <img class="icon-usuario" src="assets\img\icon-usuario.png">
+            </div>
+            <div class="nome">
+                <input class="digitavel" type="text" name="senha" placeholder="Nome Completo" required> 
+                <img class="icon-nome" src="assets\img\icon-usuario.png">
+            </div>
+            <div class="senha">
+                <input class="digitavel" type="text" name="senha" placeholder="Crie uma senha" required> 
+                <img class="icon" src="assets\img\icon-senha.png">
+            </div>
+            <div class="senha-conf">
+                <input class="digitavel" type="text" name="senha" placeholder="Confirme sua senha" required> 
+                <img class="icon" src="assets\img\icon-senha.png">
+            </div>
+            <div class="e-mail">
+                <input class="digitavel" type="text" name="senha" placeholder="E-mail" required> 
+                <img class="icon-email" src="assets\img\icon-email.png">
+            </div>
+            <div class="e-mail-conf">
+                <input class="digitavel" type="text" name="senha" placeholder="Confirme seu e-mail" required> 
+                <img class="icon-email" src="assets\img\icon-email.png">
+            </div>
+            <div class="data-nasc">
+                <input class="digitavel-nasc" type="date" name="data" placeholder="Data de Nasc." required> 
+                <img class="icon-nasc" src="assets\img\icon-nasc.png">
+            </div>
+        </form>
+        <button onclick="window.location.href='indicacao.html'">CADASTRAR</button>
+    </div>
+</body>
+<script type='text/javascript' src="assets\js\upload.js"></script>
+</html>

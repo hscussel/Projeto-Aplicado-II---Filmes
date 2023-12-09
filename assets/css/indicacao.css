@@ -1,0 +1,43 @@
+.titulos{
+    display: block;
+}
+h1{
+    width: 525px;
+    height: 55px;
+    flex-shrink: 0;
+    text-align:center;
+    margin-bottom: -40px;
+    margin-left: 30%;
+    color: #000;
+    font-family: Inter;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.container{
+    position: relative;
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-right: 0;
+}
+img{
+    width: 205px;
+    height: 500px;
+    flex-shrink: 0;
+    background: #D9D9D9;
+    position: absolute;
+    border-radius: 10px;
+}
+.filme-01{
+    position: absolute;
+}
+.filme-02{
+    margin-left: 22%;
+}
+.filme-03{
+    margin-left: 44%;
+}
+.filme-04{
+    margin-left: 66%;
+}

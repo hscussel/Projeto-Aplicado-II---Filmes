@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(196, 110, 110);
+}
+.digitavel{
+    display: block;
+    position: relative;
+    margin-top: 25px;
+    width: 540px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+.icon-nome{
+    position: absolute;
+    z-index: 4;
+    margin-left: -10%;
+}
