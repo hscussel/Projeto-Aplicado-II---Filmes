@@ -4,12 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel='stylesheet' href='assets/css/perfil.css' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="menu">
-            
+        <div class="container-lateral">
+            <div class="menus">
+                <div class="home"><a href="index.html">HOME</a></div>
+                <div class="filmes"><a href="filmes.html">FILMES</a></div>
+                <div class="filmes"><a href="series.html">SÉRIES</a></div>
+            </div>
         </div>
     </header>
+    <main>
+        <div class="container-btn">
+            <h2>lziu.h</h2>
+            <button class="editar-perfil">Editar perfil</button>
+            <button class="privacidade">Privacidade</button>
+            <button class="">Sair</button>
+        </div>
+        <div class="container-perfil">
+            <div class="container-info">
+                <a> 3 MOVIE FRIENDS</a>
+                <a >1 COMENTÁRIOS</a>
+                <a >1 AVALIAÇÕES</a>
+            </div>
+            <img src="assets\img\icon-luiz.jpg">
+            <h1>Luís Henrique da Silva</h1>
+            <p1>20yo <br>
+                floripa, sc <br>
+                ig: luiz.h</p1>
+        </div>
+        <div class="continaer-nav">
+            <div class="linha"></div>
+            <button id="comentarios" class="opcao">Comentários</button>
+            <button id="avaliacoes" class="opcao">Avaliações</button>
+            <button id="solicitacoes" class="opcao">Solicitações</button>
+        </div>
+        <div class="container-comentarios">
+            <div class="comentario"> <h2 id="baixo">Comentários:</h2>
+                <div class="icon-luiz"></div>
+                    <p9><strong>Há 2 dias:</strong>
+                    <p8>"Achei esse filme uma bomba" em "Jogos Vorazes – A cantigas dos pássaros..."</p8>
+            </div>
+
+        </div>
+        <div class="container-avaliacoes">
+            <div class="avaliacoes"> <h2 id="baixo">Avaliações:</h2>
+                <div class="icon-luiz"></div>
+                    <p9><strong>Há 2 dias:</strong>
+                    <p8>"Avaliou em 1" em "Jogos Vorazes – A cantigas dos pássaros e das serpentes"</p8>
+                
+            </div>
+        </div>
+        <div class="container-solicitacoes"><h2 id="baixo-d">Solicitações:</h2>
+            <div class="solicitacao"><p5>Você ainda não possui solicitações!</p5></div>
+        </div>
+    </main>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Função para mostrar a seção correspondente e adicionar a linha branca ativa
+        function mostrarSecao(secao) {
+            // Oculta todas as seções
+            document.querySelectorAll('.container-comentarios, .container-avaliacoes, .container-solicitacoes').forEach(function(secaoAtual) {
+                secaoAtual.style.display = 'none';
+            });
+
+            // Exibe a seção clicada
+            document.querySelector(`.${secao}`).style.display = 'block';
+
+            // Remove a classe linha-ativa de todas as opções
+            document.querySelectorAll('.opcao').forEach(function(opcao) {
+                opcao.classList.remove('linha-ativa');
+            });
+
+            // Adiciona a classe linha-ativa à opção clicada
+            document.getElementById(secao).classList.add('linha-ativa');
+        }
+
+        // Adiciona os listeners de clique às opções
+        document.getElementById('comentarios').addEventListener('click', function () {
+            mostrarSecao('container-comentarios');
+        });
+
+        document.getElementById('avaliacoes').addEventListener('click', function () {
+            mostrarSecao('container-avaliacoes');
+        });
+
+        document.getElementById('solicitacoes').addEventListener('click', function () {
+            mostrarSecao('container-solicitacoes');
+        });
+    });
+</script>
+
 </html>

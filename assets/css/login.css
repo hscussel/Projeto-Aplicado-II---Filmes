@@ -1,8 +1,8 @@
 body{
-    background-image: url("../img/fala-universidades-netflix-3.jpg");
-    background-position: 100% ; 
+    background-image: url("../img/Fundo-LOGIN.png"); 
     background-attachment: fixed;
-    
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .quadrado{
     width: 938px;

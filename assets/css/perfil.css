@@ -1,0 +1,250 @@
+body{
+    margin: 0;
+    background-color: #181818;
+    overflow: hidden;
+}
+.container-lateral{
+    margin-left: 0;
+    margin-top: 0;
+    padding: 0;
+    width: 178px;
+    height: 832px;
+    flex-shrink: 0;
+    background: #414141;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.menus {
+    display: block;
+    text-align: center;
+}
+
+.menus div {
+    margin: 10px 0; /* Ajuste a margem conforme necessário */
+}
+
+/* Adicione um estilo para destacar a opção ativa, por exemplo: */
+.menus div a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menus div a:hover {
+    text-decoration: underline;
+}
+.container-btn{
+    display: block;
+    position: relative;
+    margin-left: 50%;
+    margin-top: -60%;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+h2{
+    position: absolute;
+    margin-left: -12%;
+    margin-top: -0.3%;
+    color: rgb(218, 218, 218);
+    font-family: 'Roboto', sans-serif;
+}
+button{
+    position:relative;
+    margin-right: 5px;
+    border: none;
+    font-size: 15px;
+    background-color: rgb(59, 59, 59);
+    color: rgb(218, 218, 218);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.container-info{
+    margin-left: 30%;
+    margin-top: 5%;
+}
+a{
+    margin-right: 110px;
+    font-weight: bold;
+    color: rgb(218, 218, 218);
+    font-family: 'Roboto', sans-serif;
+}
+.container-perfil{
+    margin-left: 20%;
+}
+h1{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 24%;
+    margin-top: -12%;
+    font-size: 20px;
+    color: #fff;
+}
+img{
+    display: flex;
+    width: 266px;
+    height: 264px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 150px;
+    margin-top: -60px;
+    border: 2px solid #000;
+}
+p1{
+    position: absolute;
+    margin-left: 24%;
+    font-family: 'Roboto', sans-serif;
+    margin-top: -120px;
+    color: #fff;
+}
+.linha{
+    width: 833px;
+    height: 1px;
+    font-family: 'Roboto', sans-serif;
+    background: rgb(218, 218, 218);
+    position: relative;
+    margin-top: 5%;
+    margin-left: 30%;
+}
+p2{
+    position: absolute;
+    margin-top: 1%;
+    display: inline;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 45.5%;
+    color: rgb(218, 218, 218);
+}
+p3{
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1%;
+    display: inline;
+    margin-left: 58.5%;
+    color: rgb(218, 218, 218);
+}
+p4{
+    position: absolute;
+    margin-top: 1%;
+    font-family: 'Roboto', sans-serif;
+    display: inline;
+    margin-left: 71.5%;
+    color: rgb(218, 218, 218);
+}
+.container-comentarios{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5%;
+    margin-left: 30%;
+    position: relative;
+    display: none;
+}
+.comentario{
+    display:  none;
+    width: 833px;
+    height: 60px;
+    flex-shrink: 0;
+    background: #3a3a3a;
+    margin-bottom: 4px;
+    position: absolute;
+    display: block; 
+}
+.container-avaliacoes{
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5%;
+    margin-left: 30%;
+    position: relative;
+    display: block;
+}
+.container-solicitacoes{
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5%;
+    margin-left: 30%;
+    position: relative;
+}
+.solicitacao{
+    font-family: 'Roboto', sans-serif;
+    width: 833px;
+    height: 60px;
+    flex-shrink: 0;
+    margin-bottom: 4px;
+    position:absolute;
+    text-align: center;
+    margin-top: 2%;
+    margin-left: -10px;
+    color: rgb(218, 218, 218);
+}
+.icon-luiz{
+    width: 50px;
+    height: 50px;
+    border-radius: 150px;
+    display: inline;
+    position:absolute;
+    background-image: url("../img/icon-luiz.jpg");
+    background-position: 100% ; 
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-top: 1%;
+    margin-left: 2%;
+    z-index: 2;
+}
+p8{
+    position: absolute;
+    margin-left: 9.5%;
+    z-index: 2;
+    color: #fff;
+    width: 600px;
+}
+p9{
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 9%; 
+    color: #fff;
+    z-index: 2;
+}
+.ver{
+    position: absolute;
+    background-image: url("../img/icon-ver.png");
+    background-position: 100% ; 
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-left: 950%;
+    margin-top: -50%;
+}
+.container-avaliacoes{
+    display: none;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5%;
+    margin-left: 30%;
+    position: relative;
+    
+}
+.avaliacoes{
+
+    width: 833px;
+    height: 60px;
+    flex-shrink: 0;
+    background: #3a3a3a;
+    margin-bottom: 4px;
+    position: absolute;
+    
+}
+.linha-ativa {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin-top: 5px;
+    position: relative;
+}
+#comentarios{
+    margin-top: 1%;
+    margin-left: 48%;
+}
+#baixo{
+    margin-top: -6%;
+    margin-left: 40%;
+}
+#baixo-d{
+    margin-top: -5%;
+    margin-left: 35%;
+}
